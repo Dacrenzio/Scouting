@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:theme="@style/ThemeOverlay.Scouting.FullscreenContainer"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <FrameLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backgroudImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/campo"
+            tools:ignore="ContentDescription" />
+
+
+        <Switch
+            android:id="@+id/switchLato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lOpposto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="80dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+
+            app:maxImageSize="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lOppostoPallonetto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="150dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lBanda"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-120dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="80dp"
+            app:maxImageSize="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lBandaPallonetto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-70dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="150dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lCentro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="80dp"
+            app:maxImageSize="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lCentroPallonetto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="150dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rBanda"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-80dp"
+            app:maxImageSize="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rBandaPallonetto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-150dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rOpposto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-120dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-80dp"
+            app:maxImageSize="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rOppostoPallonetto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-70dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-150dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rCentro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-80dp"
+            app:maxImageSize="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rCentroPallonetto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-150dp" />
+
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lServizio"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="270dp"
+            app:backgroundTint="#fc0"
+            app:maxImageSize="50dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lServizioMancati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="300dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_clear_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            app:backgroundTint="#ff5555"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rServizio"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-140dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-270dp"
+            app:backgroundTint="#fc0"
+            app:maxImageSize="50dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rServizioMancati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-170dp"
+            android:layout_marginRight="-300dp"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            android:src="@drawable/ic_baseline_clear_24"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp"
+            tools:ignore="HardcodedText"
+            app:backgroundTint="#ff5555"
+            />
+
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/rPipe"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="-230dp"
+            app:maxImageSize="50dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lPipe"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="incrementa il contatore dell'opposto"
+            app:fabCustomSize="100dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="230dp"
+            app:maxImageSize="50dp"/>
+
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            app:backgroundTint="#3f4"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:src="@drawable/ic_baseline_playlist_add_24"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            app:backgroundTint="#e33"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:src="@drawable/ic_baseline_layers_clear_24"
+            />
+
+    </FrameLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <View
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+</FrameLayout>

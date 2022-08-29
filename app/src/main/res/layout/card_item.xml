@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="7dp"
+    app:layout_constraintCircleAngle="@android:integer/config_shortAnimTime">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#2b2b2b"
+        android:padding="5dp">
+
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/setDate"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="set"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/show_hide"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#7bf"
+                android:clickable="true"
+                android:padding="3dp"
+                android:src="@drawable/ic_baseline_expand_circle_down_24" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/sets_datas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.5"
+                android:background="#2B2B2B">
+
+                <TableRow
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:text="Alzatore sx/alto"
+                        android:textColor="#fff" />
+
+                </TableRow>
+
+                <TableLayout android:background="#fff">
+
+                    <TableRow
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Banda"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Centro"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Opposto"
+                            android:textColor="#fff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/banda_sx_score"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/centro_sx_score"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/opposto_sx_score"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                    </TableRow>
+
+                    <TableLayout>
+                        <TableRow
+                            android:padding="4dp"
+                            android:layout_marginTop="1dp"
+                            android:background="#2b2b2b">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Pipe"
+                                android:textColor="#fff" />
+                            <TextView
+                                android:id="@+id/pipe_sx_score"
+                                android:layout_weight="0.7"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#fff" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout>
+                        <TableRow
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:layout_marginTop="1dp"
+                            android:background="#2b2b2b">
+
+                            <TextView
+                                android:gravity="center"
+                                android:text="Pallonetti"
+                                android:textColor="#fff" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableRow
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/banda_sx_pallonetti"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/centro_sx_pallonetti"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/opposto_sx_pallonetti"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:background="#fff">
+                    <TableRow
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Servizi"
+                            android:textColor="#fff" />
+                    </TableRow>
+                    <TableRow
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b">
+
+                        <TextView
+                            android:id="@+id/servizi_sx"
+                            android:gravity="center"
+                            android:text="0 (errati: 0)"
+                            android:textColor="#fff" />
+                    </TableRow>
+                </TableLayout>
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.5"
+                android:background="#2B2B2B">
+
+                <TableRow
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:text="Alzatore dx/basso"
+                        android:textColor="#fff" />
+
+                </TableRow>
+
+                <TableLayout android:background="#fff">
+
+                    <TableRow
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Banda"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Centro"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Opposto"
+                            android:textColor="#fff" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/banda_dx_score"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/centro_dx_score"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/opposto_dx_score"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                    </TableRow>
+
+                    <TableLayout>
+                        <TableRow
+                            android:padding="4dp"
+                            android:layout_marginTop="1dp"
+                            android:background="#2b2b2b">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Pipe"
+                                android:textColor="#fff" />
+                            <TextView
+                                android:id="@+id/pipe_dx_score"
+                                android:layout_weight="0.7"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#fff" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout>
+                        <TableRow
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:layout_marginTop="1dp"
+                            android:background="#2b2b2b">
+
+                            <TextView
+                                android:gravity="center"
+                                android:text="Pallonetti"
+                                android:textColor="#fff" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableRow
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/banda_dx_pallonetti"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/centro_dx_pallonetti"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/opposto_dx_pallonetti"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#fff" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:background="#fff">
+                    <TableRow
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Servizi"
+                            android:textColor="#fff" />
+                    </TableRow>
+                    <TableRow
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#2b2b2b">
+
+                        <TextView
+                            android:id="@+id/servizi_dx"
+                            android:gravity="center"
+                            android:text="0 (errati: 0)"
+                            android:textColor="#fff" />
+                    </TableRow>
+                </TableLayout>
+
+            </TableLayout>
+        </LinearLayout>
+    </TableLayout>
+
+
+</androidx.cardview.widget.CardView>
